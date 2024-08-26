@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: center;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  
+}
+
+.logo{
+    width: 90px;
+    cursor: pointer;
+    margin:10px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    }
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+}
+
+nav ul li a:hover{
+    color: #ff5ea2;
+}
+
+.row{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2 {
+    font-size: 54px;
+}
+.col-1 h3 {
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px; 
+}
+
+.col-1 p{
+    font-size: 30px;
+    color: #595858;
+    font-weight: 100;
+}
+
+.col-1 h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+button{
+    width: 280px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color:#fff;
+    background: linear-gradient(to right, #fb5283 , #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    font-size: 50px;
+}
+
+button img{
+    width: 180px;
+    display: none;
+}
+
+
+button:hover img{
+    display: block;
+
+}
+
+button:hover {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-1::after{
+    content:'';
+    width: 10px;
+    height: 57%;
+    background:linear-gradient(#1c0380 , #140053); 
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .controller{
+    width: 90%;
+}
+
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background:linear-gradient(#090083 , #1700c2); 
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.add-btn img{
+    width:200px;
+    margin-bottom: 5px;
+}
+
+.add-btn{
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.social-links img{
+    height: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.social-links {
+    text-align: center;
+}
+.end1 img{
+    width: 100%;
+    background:(#000000);   
+}
+
+@media (min-width:1000px) {
+ 
+    .end2 img{
+    display: none;
+}
+
+}
+    
+   .end1 img{
+        width: 100%;
+        background:(#000000);   
+    }
+
+
+
+@media (max-width:1000px){
+        nav ul{
+        width: 50%;
+        background:linear-gradient(#0601a7 , #0000b1) ;
+        position: absolute;
+        top:75px;
+        right: 0;
+        z-index: 2;
+        border-radius: 10px 0 10px 10px;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px; 
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+        font-size:35px;
+    }
+    .menu-icon{
+        display: block;
+        width: 50px;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .controller{
+        width: 77%;
+    }
+    .color-box{
+        transform:translateX(75px) ;
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-1 h3{
+        font-size: 35px;
+    }
+    .end1{
+        display: none;
+    }
+    .end2 img{
+        width: 1000px;
+        background:(#000000);   
+    }
+        
+}
+
+
+
